@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style media="screen">
+        th, td {border: 1px solid; width: 50px; height: 50px}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Monthly Savings</caption> <!--표 제목-->
+        <thead> <!--최상단 볼드처리-->
+            <tr> <!--가로 -->
+                <th>Month</th> <!--제목 행 그룹-->
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tfoot> <!--최하단 마지막 내용-->
+            <tr> 
+                <td colspan="2">Sum</td>
+            </tr>
+        </tfoot>
+        <tbody> <!--최상단(헤드)과 최하단 이외 중간 내용-->
+            <tr> <!--필요한 만큼 tr태그와 내용 추가 -->
+                <td>January</td>
+                <td rowspan="2">$100</td>
+            </tr>
+            <tr>
+                <td>Febuary</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>table test</title>
+    <style media="screen">
+        th, td {border: 1px solid; width: 70px; height: 50px}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Specification values</caption> <!--표 제목-->
+        <thead> <!--최상단 볼드처리-->
+            <tr> <!--가로 -->
+                <th rowspan="2">Grade.</th> <!--제목 행 그룹-->
+                <th rowspan="2">Point.</th>
+                <th colspan="2">Strength.</th>
+                <th rowspan="2">Percent.</th>
+            </tr>
+            <tr>
+                <th>kg/mm</th>
+                <th>lb/in</th>
+                <!--합쳐지지 않는 부분에 빈칸 남겨둘 필요 없음 / 나머지가 rowspan인데 하나만 colspan -> 남는 자리에 밑에 둔 두 블럭이 알아서 들어감-->
+        </thead>
+        <tbody> <!--최상단(헤드)과 최하단 이외 중간 내용-->
+            <tr> <!--가로 행 생성--> <!--필요한 만큼 tr태그와 내용 추가 -->
+                <td>Hard</td> <!--세로 열 생성-->
+                <td>0.45</td>
+                <td>56.2</td>
+                <td>80,000</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>0.45</td>
+                <td>49.2</td>
+                <td>70,000</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Soft</td> 
+                <td>0.45</td>
+                <td>42.2</td>
+                <td>60,000</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
