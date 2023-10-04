@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자_요소</title>
+    <style media="screen">
+        p::before {
+            color: red;
+            content: "before 가상 요소를 활용한 내용";
+        }
+        p::after {
+            color: blue;
+            content: "after 가상 요소를 활용한 내용";
+        }
+
+        p::first-line {
+            color: yellowgreen;
+        }
+        p::first-letter {
+            font-size: 3em; 
+            /* 글자 크기 3배 키움 */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloremque voluptate voluptatem voluptates necessitatibus illum, eum officia aut repellat distinctio possimus expedita, porro saepe nostrum facere minima cum veniam reprehenderit.</p>
+</body>
+</html>
