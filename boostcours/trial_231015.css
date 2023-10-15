@@ -1,0 +1,71 @@
+button:hover {
+    animation : shake .3s linear infinite both;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.button {
+    color: white;
+    font-weight: bold;
+    font-size: 30pt;
+    padding: 30px;
+    border-radius: 20px;
+    border-color:transparent;
+    text-align: center;
+}
+
+.container {
+    width: 20%;
+    margin: 0 auto 0 auto;
+}
+
+
+
+.cords:hover > * {
+    filter: blur(6.5px);
+    transform: scale(0.9 , 0.9);
+}
+
+.cords {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    pointer-events: auto;
+
+    transform: 
+        perspective(1500px)
+        rotateX(30deg)
+        scale(0.85);
+    transition: .5s ease all;
+
+    &:hover {
+        transform: 
+            rotate(0deg)
+            scale(1)
+            translateY(10px);
+}
+}
+
+.cords:hover > *:hover {
+    transform: scale(1.1 , 1.1);
+    filter: none;
+}
